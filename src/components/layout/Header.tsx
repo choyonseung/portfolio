@@ -12,8 +12,6 @@ export default function Header({ theme, onToggleTheme }: Props) {
   const { pathname } = useLocation();
 
   const isHome = pathname === "/";
-  const isAdmin = pathname.startsWith("/admin");
-  const isSystem = pathname.startsWith("/styleguide");
 
   // Home에서는 헤더를 최소화, Admin/System에서는 툴바 형태로 풍부하게
   const mode: "home" | "workbench" = isHome ? "home" : "workbench";
