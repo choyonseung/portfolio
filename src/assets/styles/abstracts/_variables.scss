@@ -1,0 +1,26 @@
+/* Palette */
+$charcoal: #2f2f2f;
+$lime: #e2f4a6;
+$pink: #eea0ff;
+$blue: #5a4eff;
+$red: #ff5b5b;
+$gray-50: #f5f5f5;
+
+$white: #ffffff;
+$black: #000000;
+
+/* Typography */
+$font-family-base: "Pretendard", system-ui, -apple-system;
+
+/* Layout */
+$container-max: 1100px;
+
+/* Breakpoints */
+$bp-mobile: 480px;
+$bp-tablet: 860px;
+$bp-desktop: 1280px;
+
+/* Z-index */
+$z-header: 50;
+$z-alert: 1000;
+$z-toast: 1100;

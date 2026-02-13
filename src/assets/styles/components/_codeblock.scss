@@ -1,0 +1,95 @@
+.code-block {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface-2);
+  color: var(--color-text);
+  overflow: hidden;
+
+  &-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    padding: var(--space-sm) var(--space-md);
+    background: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  &-title-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  &-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--color-text-strong);
+  }
+
+  &-lang {
+    font-size: 11px;
+    color: var(--color-text-muted);
+  }
+
+  &-spacer {
+    margin-left: auto;
+  }
+
+  &-btn {
+    font-size: 12px;
+    padding: 6px 10px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--color-border);
+    background: var(--color-surface-3);
+    color: var(--color-text);
+    cursor: pointer;
+    transition: background var(--ease), border-color var(--ease);
+
+    &:hover {
+      background: var(--color-surface-2);
+      border-color: var(--color-border-strong);
+    }
+
+    &-copied {
+      background: rgba(114, 250, 147, 0.18);
+      border-color: rgba(114, 250, 147, 0.4);
+    }
+  }
+
+  &-body {
+    max-height: 420px;
+    overflow: auto;
+    background: var(--color-code-bg);
+  }
+
+  &-pre {
+    margin: 0;
+    padding: var(--space-md);
+    font-size: 12.5px;
+    line-height: 1.6;
+  }
+
+  &-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  &-line-no {
+    text-align: right;
+    padding-right: 12px;
+    color: var(--color-text-faint);
+    user-select: none;
+    vertical-align: top;
+    width: 1%;
+    white-space: nowrap;
+  }
+
+  &-line {
+    white-space: pre;
+    color: var(--color-text);
+  }
+
+  + * {
+    margin-top: 12px;
+  }
+}

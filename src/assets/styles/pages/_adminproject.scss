@@ -1,0 +1,45 @@
+.admin-projects {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 16px;
+  align-items: start;
+
+  @media (max-width: 1080px) {
+    grid-template-columns: 1fr;
+  }
+
+  &-left {
+    position: relative;
+    min-width: 0;
+  }
+
+  &-right {
+    position: sticky;
+    top: 90px;
+    min-width: 0;
+
+    @media (max-width: 1080px) {
+      position: static;
+    }
+  }
+
+  &-list {
+    display: grid;
+    gap: 12px;
+  }
+
+  &-previewTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  &-hint {
+    margin: 6px 0 0;
+    color: var(--color-text-muted);
+    font-size: 13px;
+    line-height: 1.6;
+  }
+}

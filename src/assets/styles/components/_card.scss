@@ -1,0 +1,83 @@
+.panel {
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  backdrop-filter: blur(16px);
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+
+  &-glass::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--gradient-soft);
+    opacity: 0.85;
+    pointer-events: none;
+  }
+
+  &-glass > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  &-inner {
+    padding: var(--space-2xl);
+  }
+}
+
+.card {
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  backdrop-filter: blur(14px);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-lg);
+
+  &-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 900;
+  }
+
+  &-sub {
+     margin: 0 0 6px;
+    font-size: 12px;
+    font-weight: 900;
+    color: var(--color-text-muted);
+    opacity: 0.78;
+  }
+
+  &-meta {
+    margin: 6px 0 0;
+    color: var(--color-text-muted);
+    font-weight: 600;
+    font-size: 13px;
+  }
+
+  &-period {
+    margin: 6px 0;
+    color: var(--color-text-muted);
+    font-size: 13px;
+  }
+
+  &-link {
+    display: inline-flex;
+    gap: 6px;
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: 900;
+    text-decoration: none;
+    color: var(--color-primary);
+    opacity: 0.9;
+
+    &:hover {
+      opacity: 1;
+      text-decoration: underline;
+    }
+  }
+
+  &-note {
+    font-size: 13px;
+  }
+}

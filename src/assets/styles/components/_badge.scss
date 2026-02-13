@@ -1,0 +1,92 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  height: 26px;
+  padding: 0 10px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1;
+  transition: background var(--ease), border-color var(--ease), color var(--ease);
+
+  &-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  /* solid */
+  &-solid {
+    &.badge-primary {
+      background: rgba(90, 78, 255, 0.26);
+      border-color: rgba(90, 78, 255, 0.52);
+      color: rgba(90, 78, 255, 0.98);
+    }
+
+    &.badge-accent {
+      background: rgba(226, 244, 166, 0.36);
+      border-color: rgba(120, 148, 10, 0.30);
+      color: rgba(120, 148, 10, 0.96);
+    }
+
+    &.badge-pink {
+      background: rgba(238, 160, 255, 0.30);
+      border-color: rgba(238, 160, 255, 0.60);
+      color: rgba(170, 60, 200, 0.96);
+    }
+
+    &.badge-info {
+      background: rgba(86, 205, 255, 0.26);
+      border-color: rgba(86, 205, 255, 0.56);
+      color: rgba(0, 140, 200, 0.98);
+    }
+
+    &.badge-success {
+      background: rgba(60, 220, 140, 0.24);
+      border-color: rgba(60, 220, 140, 0.54);
+      color: rgba(0, 160, 92, 0.98);
+    }
+
+    &.badge-warning {
+      background: rgba(255, 206, 84, 0.30);
+      border-color: rgba(255, 206, 84, 0.62);
+      color: rgba(170, 110, 0, 0.98);
+    }
+  }
+
+  /* outline */
+  &-outline {
+    background: transparent;
+
+     &.badge-primary {
+      border-color: rgba(90, 78, 255, 0.52);
+      color: rgba(90, 78, 255, 0.98);
+    }
+
+    &.badge-accent {
+      border-color: rgba(120, 148, 10, 0.76);
+      color: rgba(120, 148, 10, 0.96);
+    }
+
+    &.badge-pink {
+      border-color: rgba(238, 160, 255, 0.60);
+      color: rgba(170, 60, 200, 0.96);
+    }
+
+    &.badge-info {
+      border-color: rgba(86, 205, 255, 0.56);
+      color: rgba(0, 140, 200, 0.98);
+    }
+
+    &.badge-success {
+      border-color: rgba(60, 220, 140, 0.54);
+      color: rgba(0, 160, 92, 0.98);
+    }
+
+    &.badge-warning {
+      border-color: rgba(255, 206, 84, 0.62);
+      color: rgba(170, 110, 0, 0.98);
+    }
+  }
+}

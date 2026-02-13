@@ -1,0 +1,6 @@
+.container {
+  max-width: var(--container-max);
+  min-height: calc(100vh - var(--header-h) - var(--footer-h));
+  margin: 0 auto;
+  padding: 20px var(--space-xl) 60px;
+}

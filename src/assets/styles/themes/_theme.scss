@@ -1,0 +1,6 @@
+@use "./light";
+@use "./dark";
+
+:root {
+  color-scheme: light dark;
+}

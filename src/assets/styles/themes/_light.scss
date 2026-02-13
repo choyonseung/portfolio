@@ -1,0 +1,53 @@
+@use "../abstracts/variables" as v;
+
+:root[data-theme="light"] {
+  /* background */
+  --color-bg: #{v.$gray-50};
+
+  /* surface levels */
+  --color-surface: rgba(255, 255, 255, 0.75);
+  --color-surface-2: rgba(255, 255, 255, 0.92);
+  --color-surface-3: rgba(0, 0, 0, 0.04);
+
+  /* text */
+  --color-text-strong: rgba(0, 0, 0, 0.92);
+  --color-text: rgba(0, 0, 0, 0.88);
+  --color-text-muted: rgba(0, 0, 0, 0.56);
+  --color-text-faint: rgba(0, 0, 0, 0.40);
+
+  /* border */
+  --color-border: rgba(0, 0, 0, 0.10);
+  --color-border-strong: rgba(0, 0, 0, 0.14);
+
+  /* brand palette */
+  --color-primary: #{v.$blue};
+  --color-accent: #{v.$lime};
+  --color-pink: #{v.$pink};
+
+  /* semantic colors */
+  --color-info: #1788ff;
+  --color-success: #16b364;
+  --color-warning: #f59f00;
+  --color-danger: #{v.$red};
+
+  /* focus */
+  --focus-ring: 0 0 0 4px rgba(90, 78, 255, 0.16);
+
+  /* shadows */
+  --shadow-sm: 0 10px 28px rgba(0, 0, 0, 0.10);
+  --shadow-md: 0 18px 70px rgba(0, 0, 0, 0.18);
+  --shadow-lg: 0 18px 80px rgba(0, 0, 0, 0.20);
+
+  --shadow-primary: 0 14px 34px rgba(90, 78, 255, 0.22);
+  --shadow-primary-hover: 0 18px 44px rgba(90, 78, 255, 0.30);
+
+  --shadow-danger: 0 14px 34px rgba(255, 91, 91, 0.20);
+
+  /* gradient */
+  --gradient-soft:
+    radial-gradient(circle at 25% 15%, rgba(90, 78, 255, 0.16), transparent 55%),
+    radial-gradient(circle at 85% 10%, rgba(238, 160, 255, 0.12), transparent 55%);
+
+  /* code block */
+  --color-code-bg: #e3e3e3;
+}

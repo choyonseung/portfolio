@@ -1,0 +1,79 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  height: var(--header-h);
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--color-border);
+
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__brand {
+    font-size: 16px;
+    font-weight: 900;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  &-link {
+    height: 36px;
+    padding: 0 12px;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 800;
+    opacity: 0.82;
+    border: 1px solid transparent;
+    transition: var(--ease);
+
+    &:hover {
+      opacity: 1;
+      background: rgba(255, 255, 255, 0.06);
+      border-color: var(--color-border);
+    }
+
+    &.is-active {
+      opacity: 1;
+      background: rgba(90, 78, 255, 0.14);
+      border-color: rgba(90, 78, 255, 0.28);
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &-meta {
+    font-size: 12px;
+    opacity: 0.65;
+  }
+
+  &--home {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: transparent;
+    border-bottom: 1px solid transparent;
+    backdrop-filter: blur(12px);
+  }
+
+  &--workbench {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: var(--color-surface);
+    backdrop-filter: blur(12px);
+  }
+}

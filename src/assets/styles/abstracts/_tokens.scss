@@ -1,0 +1,126 @@
+@use "./variables" as v;
+
+:root {
+  /* ============================= */
+  /* Typography */
+  /* ============================= */
+  --font-family: #{v.$font-family-base};
+
+  --font-xs: 12px;
+  --font-sm: 13px;
+  --font-md: 14px;
+  --font-lg: 16px;
+  --font-xl: 18px;
+
+  --lh-xs: 16px;
+  --lh-sm: 18px;
+  --lh-md: 20px;
+  --lh-lg: 22px;
+  --lh-xl: 26px;
+
+  /* ============================= */
+  /* Spacing Scale */
+  /* ============================= */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-lg: 16px;
+  --space-xl: 20px;
+  --space-2xl: 24px;
+  --space-3xl: 32px;
+  --space-4xl: 40px;
+
+  /* ============================= */
+  /* Radius */
+  /* ============================= */
+  --radius-xs: 10px;
+  --radius-sm: 14px;
+  --radius-md: 18px;
+  --radius-lg: 22px;
+  --radius-xl: 28px;
+
+  /* ============================= */
+  /* Control Height Scale (공통) */
+  /* 버튼 / 인풋 / 셀렉트 전부 공유 */
+  /* ============================= */
+  --control-h-xs: 28px;
+  --control-h-sm: 32px;
+  --control-h-md: 40px;
+  --control-h-lg: 48px;
+  --control-h-xl: 52px;
+
+  --control-px-xs: 10px;
+  --control-px-sm: 10px;
+  --control-px-md: 14px;
+  --control-px-lg: 16px;
+  --control-px-xl: 16px;
+
+  --control-font-xs: var(--font-xs);
+  --control-font-sm: var(--font-sm);
+  --control-font-md: var(--font-md);
+  --control-font-lg: var(--font-lg);
+  --control-font-xl: var(--font-xl);
+
+  /* textarea */
+  --textarea-min-h: 80px;
+
+  /* form control radius */
+  --control-radius-xs: calc( var(--control-h-xs) / 2 );
+  --control-radius-sm: calc( var(--control-h-sm) / 2 );
+  --control-radius-md: calc( var(--control-h-md) / 2 );
+  --control-radius-lg: calc( var(--control-h-lg) / 2 );
+  --control-radius-xl: calc( var(--control-h-xl) / 2 );
+
+  /* ============================= */
+  /* Button Tokens (Control 기반) */
+  /* ============================= */
+  --btn-h-xs: var(--control-h-xs);
+  --btn-h-sm: var(--control-h-sm);
+  --btn-h-md: var(--control-h-md);
+  --btn-h-lg: var(--control-h-lg);
+  --btn-h-xl: var(--control-h-xl);
+
+  --btn-px-xs: var(--control-px-xs);
+  --btn-px-sm: var(--control-px-sm);
+  --btn-px-md: var(--control-px-md);
+  --btn-px-lg: var(--control-px-lg);
+  --btn-px-xl: var(--control-px-xl);
+
+  /* ============================= */
+  /* Form State Tokens */
+  /* ============================= */
+  --control-border-focus: var(--color-primary);
+  --control-ring-focus: 0 0 0 2px rgba(30, 72, 143, 0.15);
+
+  --control-border-error: var(--color-danger);
+  --control-ring-error: 0 0 0 2px rgba(179, 38, 30, 0.15);
+
+  --control-border-success: var(--color-success);
+  --control-ring-success: 0 0 0 2px rgba(0, 128, 76, 0.15);
+
+  --control-bg-disabled: var(--color-surface-alt);
+  --control-text-disabled: var(--color-text-muted);
+
+  /* ============================= */
+  /* Motion */
+  /* ============================= */
+  --ease: 180ms ease;
+
+  /* ============================= */
+  /* Shadow */
+  /* ============================= */
+  --shadow-sm: 0 10px 28px rgba(0, 0, 0, 0.18);
+  --shadow-md: 0 18px 70px rgba(0, 0, 0, 0.32);
+
+  /* ============================= */
+  /* Overlay */
+  /* ============================= */
+  --dim: rgba(0, 0, 0, 0.4);
+
+  /* ============================= */
+  /* Layout */
+  /* ============================= */
+  --container-max: #{v.$container-max};
+  --header-h: 70px;
+  --footer-h: 70px;
+}

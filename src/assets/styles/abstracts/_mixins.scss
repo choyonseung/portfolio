@@ -1,0 +1,127 @@
+@mixin font-style($size, $lineHeight: normal) {
+  font-size: $size !important;
+  line-height: $lineHeight !important;
+}
+
+@mixin font-heading($size, $weight: 600) {
+  @if $size == 1 {
+    @include font-style(32px, 1.2);
+  }
+  @if $size == 2 {
+    @include font-style(26px, 1.2);
+  }
+  @if $size == 3 {
+    @include font-style(24px, 1.2);
+  }
+  @if $size == 4 {
+    @include font-style(22px, 1.2);
+  }
+  @if $size == 5 {
+    @include font-style(20px, 1.2);
+  }
+  font-weight: $weight;
+}
+
+@mixin font-body($size, $weight: 400) {
+  @if $size == 1 {
+    @include font-style(22px, 1.2);
+  }
+  @if $size == 2 {
+    @include font-style(20px, 1.2);
+  }
+  @if $size == 3 {
+    @include font-style(18px, 1.2);
+  }
+  @if $size == 4 {
+    @include font-style(16px, 1.2);
+  }
+  @if $size == 5 {
+    @include font-style(14px, 1.2);
+  }
+  font-weight: $weight;
+}
+
+@mixin font-info($size, $weight: 500) {
+   @if $size == 1 {
+    @include font-style(22px, 1.2);
+  }
+  @if $size == 2 {
+    @include font-style(20px, 1.2);
+  }
+  @if $size == 3 {
+    @include font-style(18px, 1.2);
+  }
+  @if $size == 4 {
+    @include font-style(16px, 1.2);
+  }
+  @if $size == 5 {
+    @include font-style(14px, 1.2);
+  }
+  font-weight: $weight;
+}
+
+@mixin ellipsis($line: 1) {
+  @if ($line == 1) {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    flex-shrink: 1 !important;
+  } @else {
+    display: -webkit-box;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+@mixin safe-bottom($paddingBottom: var(--spacing-b)) {
+  padding-bottom: max($paddingBottom, constant(safe-area-inset-bottom));
+  padding-bottom: max($paddingBottom, env(safe-area-inset-bottom));
+}
+
+@mixin sticky-bottom-area($paddingTop: 16px, $color: white) {
+  position: sticky;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-top: auto;
+  // padding-top: $paddingTop;
+  // padding-left: var(--spacing-x);
+  // padding-right: var(--spacing-x);
+  padding: 0;
+  background: linear-gradient(to bottom, transparent 0, $color $paddingTop, $color 100%);
+  z-index: 1;
+  transition: bottom 0.25s linear;
+}
+
+@mixin gap($size) {
+  gap: $size;
+
+  @supports (-webkit-touch-callout: none) and (not (translate: none)) {
+    & > * + * {
+      margin-left: $size;
+    }
+  }
+}
+
+@mixin column-gap($size) {
+  gap: $size;
+
+  @supports (-webkit-touch-callout: none) and (not (translate: none)) {
+    & > * + * {
+      margin-left: unset;
+      margin-top: $size;
+    }
+  }
+}
+
+@mixin row-column-gap($size) {
+  gap: $size;
+
+  @supports (-webkit-touch-callout: none) and (not (translate: none)) {
+    & > * + * {
+      margin-left: unset;
+      margin-top: $size;
+    }
+  }
+}

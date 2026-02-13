@@ -1,0 +1,88 @@
+@use "../abstracts/mixins" as *;
+
+/* ============================= */
+/* Typography */
+/* ============================= */
+.typography {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 12px;
+
+  &-head {
+    .h1 {
+      @include font-heading(1, 700);
+    }
+    
+    .h2 {
+      @include font-heading(2, 700);
+    }
+
+    .h3 {
+      @include font-heading(3);
+    }
+
+    .h4 {
+      @include font-heading(4);
+    }
+
+    .h5 {
+      @include font-heading(5);
+    }
+  }
+
+  &-body {
+    .h1 {
+      @include font-body(1, 600);
+    }
+    
+    .h2 {
+      @include font-body(2, 500);
+    }
+
+    .h3 {
+      @include font-body(3);
+    }
+
+    .h4 {
+      @include font-body(4);
+    }
+
+    .h5 {
+      @include font-body(5);
+    }
+  }
+
+  &-info {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    .h1 {
+      @include font-info(1);
+    }
+    
+    .h2 {
+      @include font-info(2);
+    }
+
+    .h3 {
+      @include font-info(3);
+    }
+
+    .h4 {
+      @include font-info(4);
+    }
+
+    .h5 {
+      @include font-info(5);
+    }
+  }
+
+  &-sub {
+    display: flex;
+    gap: 6px;
+  }
+}

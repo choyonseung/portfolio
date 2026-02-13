@@ -1,0 +1,7 @@
+.page {
+  .section {
+    + .section {
+      margin-top: var(--space-4xl);
+    }
+  }
+}

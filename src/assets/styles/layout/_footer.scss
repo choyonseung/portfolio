@@ -1,0 +1,9 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--footer-h);
+  padding: 16px 20px;
+  color: var(--color-text);
+  opacity: 0.4;
+}
